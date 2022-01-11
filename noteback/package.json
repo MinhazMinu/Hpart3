@@ -1,0 +1,19 @@
+{
+  "name": "noteback",
+  "version": "1.0.0",
+  "description": "backend for note app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "nmon": "nodemon index.js"
+  },
+  "author": "Minhaz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
