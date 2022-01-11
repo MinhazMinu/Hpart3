@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "nmon": "nodemon index.js"
+    "nmon": "nodemon index.js",
+    "start": "node index.js",
+    "build:ui": "rm -rf build && cd ../note && npm run build && cp -r build ../noteback",
+    "deploy": "git push heroku main",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
+    "logs:prod": "heroku logs --tail"
   },
   "author": "Minhaz",
   "license": "MIT",
