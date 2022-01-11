@@ -48,7 +48,7 @@ app.delete("/api/notes/:id", (request, response) => {
 
 app.post("/api/notes", (request, response) => {
   if (!request.body.content) {
-    return response.status(400).json({ error: "content missing" });
+    return response.status(400).json({ error: "content is missing" });
   }
   const note = request.body;
   note.date = new Date().toISOString();
