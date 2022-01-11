@@ -32,7 +32,7 @@ const App = () => {
     if (duplicate) {
       if (
         window.confirm(
-          `${duplicate.name} is already there . do you want to replace the number ?`
+          `${duplicate.name} is already there ... do you want to replace the number ?`
         )
       ) {
         personServices.dataPatch(duplicate.id, newNumber).then((response) => {
@@ -59,6 +59,7 @@ const App = () => {
           setMassage(null);
         }, 5000);
       });
+      setControllEffect(!controllEffect);
     }
   };
 
